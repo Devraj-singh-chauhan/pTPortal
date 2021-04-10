@@ -3,8 +3,7 @@
 <a href="https://hack36.com"> <img src="http://bit.ly/BuiltAtHack36" height=20px> </a>
 
 ## Introduction
-This is a web based project based on webD with a theme of life in a pandemic for primary class students. It provides a portal(link between teacher and parents) as there is a major gap in communication between them. So through this the primary students will be able to learn and continue with their studies in this pandemic as the parents will be we
-ll-guided by the teachers through the portal this project provides.
+This is a web based project based on webD with a theme of life in a pandemic for primary class students. It provides a portal(link between teacher and parents) as there is a major gap in communication between them. So through this the primary students will be able to learn and continue with their studies in this pandemic as the parents will be well-guided by the teachers through the portal this project provides.
 
 ## Technology Stack
 1. HTML
