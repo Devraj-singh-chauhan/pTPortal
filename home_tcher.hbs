@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teacher Portal</title>
+	<link rel="stylesheet" href="css/style2.css">
+</head>
+<body>    
+    <h1 style='text-shadow: 0px 0px red; margin: 0px; position: relative; left: 0px;'>pT Portal</h1>
+<div class="top">
+<img id="icon" width="60" height="60">  <em><h1>Welcome Teacher</h1>
+	<h5>New way to interact with your student's and their guardians.</h5>
+    </em></div>
+  <div class="middle">
+    <!-- form for adding student's registration number -->
+	<h2>Add New Student Details:</h2>
+    <form action="/add_student_data" method="POST">
+        <input type="text" class="aa" name="name" placeholder="Student's Name">
+        <input type="text" class="aa" name="reg_no" placeholder="Registration Number"><br>
+        <input type="submit" class="btn" value="SUBMIT">
+    </form>
+
+    <!-- showing students data added  -->
+    <h2>Student Details:</h2>
+    <a href="/get_student_data" class="ab">Load data</a>
+    <div class="ab">
+        {{#each details}}
+        <div>NAME : {{ this.name}}</div>
+        <div>REGISTRATION NO. : {{ this.reg_no}}</div>
+        {{/each}}
+    </div>
+
+    <!-- homework text area -->
+	<h2>Add Homework Details:</h2>
+    <form action="/add_homework" method="POST">
+        <textarea name= "homework" class="ab" rows="10" col="10" id="">
+        </textarea><br>
+        <input type="text" class="ab" name="date" placeholder="Enter date"><br>
+        <input type="submit" class="btnb" value="Add homework"><br>
+    </form>
+
+    <!-- showing homework list -->
+    <h2>Update Homework:</h2>
+    <a href="/get_homework_details" class="ab">Show homework</a>
+    <div class="ab">
+        {{#each hw_details}}
+        <div >ID of Homework to be Updated: {{ this._id}}</div>
+        <div >Updated Homework: {{ this.homework}}</div>
+        <div >Date: {{this.date}}</div>
+        {{/each}}
+    </div>
+    
+    <!-- updating homework -->
+    <form action="/update_homework" method="POST">
+        <input type="text" class="ab" name="id" placeholder="id of hw to be updated"><br>
+        <textarea name= "homework" class="ab" rows="10" col="10" id="">
+        </textarea><br>
+        <input type="submit" class="btna" value="Update homework">
+    </form>
+  </div>
+
+
+
+<script>
+    
+</script>
+</body>
+</html>

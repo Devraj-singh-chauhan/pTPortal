@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login page</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="div_main" style="background-color: white; background-size: cover;">
+        <h1 class="pt">pT Portal</h1>
+        <h1 id="abc">For an Improved teaching and <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;learing experience!  </h1>
+        
+        <div class="div1">
+            <img id="x" height="250px" width="250px" alt="">
+        <h2>Register as a Teacher &nbsp;&nbsp;</h2>  
+        <input type="button" name="" id="signup1" value="Register">
+        </div>
+        <div class="div1" style="background-color: rgb(238, 185, 136); height:638px;">
+            <img id="y" height="250px" width="200px" alt="">
+        <h2>Register as a Parent &nbsp;&nbsp;</h2> 
+        <input type="button" name="" id="signup2" value="Register">
+        </div>
+        <!-- <div class="img_container">
+            <img src="Images/5.jpg" alt="">
+            <img class="transition_img" src="Images/6.jpg" alt="">
+        </div> -->
+    </div>
+
+    <div class="signup_page">
+        <fieldset>
+            <legend class="legend"> Welcome </legend> <br> 
+        <!-- teacher reg  -->       
+        <div id="tcher_reg">
+            <div id="close">+</div>
+            <br>
+                <form action="/registerTcher" method="POST">
+                    <input type="text" name="schoolname" id="" placeholder="School Name" class="input" >
+                    <input type="text" name="name" id="" placeholder="Name" class="input">
+                    <input type="text" name="email" id="" placeholder="E-Mail" class="input">
+                    <input type="password" name="password" id="" placeholder="Password" class="input">
+                    <input type="password" name="cpassword" id="" placeholder="Confirm Password" class="input">
+                    <input type="submit" name="" id="tr1" value="Register" >
+                    <p>Already have an account? <a id="login"> Login</a></p>
+                </form>
+        </div>
+        <!-- teacher login  -->
+        <div id="tcher_login">
+            <div id="close1">+</div>
+            <br>
+                <form action="/loginTcher" method="POST">
+                    <!-- <input type="text" name="" id="" placeholder="School Name" class="input" >
+                    <input type="text" name="" id="" placeholder="Name" class="input"> -->
+                    <input type="text" name="email" id="" placeholder="E-Mail" class="input">
+                    <input type="password" name="password" id="" placeholder="Password" class="input">
+                    <input type="submit" name="" id="submit" value="LOGIN" >
+                    <p>Don't have an account?  <a id="signup">Signup</a></p>
+                </form>
+        </div>
+        </fieldset>
+    </div>
+
+    <div class="signup_page_2">
+        <fieldset>
+            <legend class="legend"> Welcome </legend> <br> 
+        <!-- prent reg  -->       
+        <div id="prent_reg">
+        <div id="close2">+</div>
+        <br>
+            <form action="/registerPrent" method="POST">
+                <input type="text" name="schoolname" id="" placeholder="School Name" class="input" >
+                <input type="text" name="student_reg_no" id="" placeholder="Student's Reg. No." class="input" >
+                <input type="text" name="name" id="" placeholder="Name" class="input">
+                <input type="text" name="email" id="" placeholder="E-Mail" class="input">
+                <input type="password" name="password" id="" placeholder="Password" class="input">
+                <input type="password" name="cpassword" id="" placeholder="Confirm Password" class="input">
+                <input type="submit" name="" id="pr1" value="REGISTER" >
+                <p>Already have an account?  <a id="login_p">Login</a></p>
+            </form>
+        </div>
+        <!-- prent login  -->
+        <div id="prent_login">
+            <div id="close3">+</div>
+            <br>
+                <form action="/loginPrent" method="POST">
+                    <!-- <input type="text" name="" id="" placeholder="School Name" class="input" >
+                    <input type="text" name="" id="" placeholder="Name" class="input"> -->
+                    <input type="text" name="email" id="" placeholder="E-Mail" class="input">
+                    <input type="password" name="password" id="" placeholder="Password" class="input">
+                    <input type="submit" name="" id="submit" value="LOGIN" >
+                    <p>Don't have an account?  <a id="signup_p">Signup</a></p>
+                </form>
+        </div>
+        </fieldset>
+    </div>
+
+    <script type="text/javascript">
+    document.getElementById('signup1').addEventListener('click',function(){
+        document.querySelector('.signup_page').style.display = 'flex';
+        document.querySelector('.div_main').style.opacity = '0';
+    });
+    
+    document.getElementById('close').addEventListener('click',function(){
+        document.querySelector('.signup_page').style.display = 'none';
+        document.querySelector('.div_main').style.opacity = '1';
+    });
+    document.getElementById('close1').addEventListener('click',function(){
+        document.querySelector('#tcher_reg').style.display = 'flex';
+        document.querySelector('#tcher_login').style.display = 'none';
+        document.querySelector('.signup_page').style.display = 'none';
+        document.querySelector('.div_main').style.opacity = '1';
+    });
+
+    document.getElementById('login').addEventListener('click',function(){
+        document.querySelector('#tcher_reg').style.display = 'none';
+        document.querySelector('#tcher_login').style.display = 'flex';
+    });
+
+    document.getElementById('signup').addEventListener('click',function(){
+        document.querySelector('#tcher_reg').style.display = 'flex';
+        document.querySelector('#tcher_login').style.display = 'none';
+    });
+
+
+    document.getElementById('signup2').addEventListener('click',function(){
+        document.querySelector('.signup_page_2').style.display = 'flex';
+        document.querySelector('.div_main').style.opacity = '0';
+    });
+    
+    document.getElementById('close2').addEventListener('click',function(){
+        document.querySelector('.signup_page_2').style.display = 'none';
+        document.querySelector('.div_main').style.opacity = '1';
+    });
+    document.getElementById('close3').addEventListener('click',function(){
+        document.querySelector('#prent_reg').style.display = 'flex';
+        document.querySelector('#prent_login').style.display = 'none';
+        document.querySelector('.signup_page_2').style.display = 'none';
+        document.querySelector('.div_main').style.opacity = '1';
+    });
+
+    document.getElementById('login_p').addEventListener('click',function(){
+        document.querySelector('#prent_reg').style.display = 'none';
+        document.querySelector('#prent_login').style.display = 'flex';
+    });
+
+    document.getElementById('signup_p').addEventListener('click',function(){
+        document.querySelector('#prent_reg').style.display = 'flex';
+        document.querySelector('#prent_login').style.display = 'none';
+    });
+
+    // let reg1=document.getElementById('signup1');
+    // reg1.addEventListener('mouseover',function(){
+    //     reg1.style.fontSize='40px';
+    //     reg1.style.backgroundColor='rgba(247, 238, 121, 0.8)';
+    // });
+    // function chnge_style_reg1(){
+    //     let reg1=document.getElementById('signup1');
+    //     reg1.style.fontSize='40px';
+    //     reg1.style.backgroundColor='rgba(247, 238, 121, 0.8)';
+    // }
+    // function chnge_style_reg2(){
+    //     let reg2=document.getElementById('signup2');
+    //     reg2.style.fontSize='40px';
+    //     reg2.style.backgroundColor='rgba(247, 238, 121, 0.8)';
+    // }
+    </script>
+</body>
+</html>

@@ -1,0 +1,277 @@
+body{
+    background-image:url(Images/abc.jpg);
+    background-size:cover;
+    background-attachment:fixed;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-left: 0%;
+}
+#x{
+    background-image: url(Images/teacher.png);
+    background-size: cover;
+   
+}
+#y{
+    background-image: url(Images/parents.png);
+    background-size: cover;
+  
+}
+.pt{
+    
+    display: inline;
+    text-align: center;
+    margin-bottom: 0%;
+}
+.div_main{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    
+    /* justify-content: center;
+    align-items: center; */
+
+}
+img{
+    margin-left:150px ;
+    margin-top: 30px;
+    
+}
+#abc{
+    text-align: center;
+     background-color: black;
+     color: white;
+      margin-bottom: 0%;
+      margin-top: 0;
+      
+}
+p{
+    font-size: 15px;
+    margin-left: 60px;
+}
+h2{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-left: 50px;
+    font-size: 30px;
+    color: rgb(53, 1, 14);
+    
+}
+/* .img_container{
+    margin-left: 50px;
+    height: 350px;
+    width: 700px;
+    position: relative;
+    border-radius: 10%;
+}
+.img_container img{
+    width: 100%;
+    height: 100%;
+}
+.transition_img{
+    position: absolute;
+    top: 150px;
+    left: 0px;
+    opacity: 0;
+    transition: opacity 1s ease;
+}
+.transition_img:hover{
+    opacity: 1;
+} */
+.div1{
+    height: 150px;
+    width: 50%;
+    position: relative;
+    top: 0;
+    float: left;
+}
+#right{
+    background-color: rgb(10, 66, 99);
+    height: 500px;
+}
+#signup1{
+    background-color: rgba(115, 141, 228, 0.4);
+    font-size: 20px;
+    border-radius: 20px;
+    border-style: solid black; 
+    margin-left: 130px;
+}
+#signup1:hover{
+    font-size: 20px;
+    background-color: rgba(42, 22, 153, 0.4);
+    cursor: pointer;
+}
+#signup2:hover{
+    font-size: 20px;
+    background-color: rgba(42, 22, 153, 0.4);
+    cursor: pointer;
+}
+#signup2{
+    background-color: rgba(115, 141, 228, 0.4);
+    font-size: 20px;
+    border-radius: 20px;
+    border-style: solid black; 
+    margin-left: 130px; 
+}
+#signup{
+    font-size: 20px;
+    color: blue;
+}
+#signup:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+#login{
+    font-size: 20px;
+    color:blue;
+}
+#login:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+#signup_p{
+    font-size: 20px;
+    color: blue;
+}
+#signup_p:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+#login_p{
+    font-size: 20px;
+    color: blue;
+}
+#login_p:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.signup_page{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+.signup_page_2{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+.legend{
+    font-size: 40px;
+    color: rgb(19, 11, 3);
+}
+#tcher_reg{
+    width: 400px;
+    height: 500px;
+    background-color: blanchedalmond;
+    opacity: 0.9;
+    text-align: center;
+    position: relative;
+    display: flex;
+}
+#tcher_login{
+    width: 400px;
+    height: 400px;
+    background-color: blanchedalmond;
+    opacity: 0.9;
+    text-align: center;
+    position: relative;
+    display: none;
+}
+#prent_reg{
+    width: 400px;
+    height: 560px;
+    background-color: blanchedalmond;
+    opacity: 0.9;
+    text-align: center;
+    position: relative;
+    display: flex;
+}
+#prent_login{
+    width: 400px;
+    height: 400px;
+    background-color: blanchedalmond;
+    opacity: 0.9;
+    text-align: center;
+    position: relative;
+    display: none;
+}
+.input{
+    width: 60%;
+    height: 25px;
+    display: block;
+    padding: 5px;
+    margin: 30px auto;    
+}
+#close{
+    position: absolute;
+    top: 0;
+    right: 10px;
+    font-size: 35px;
+    transform: rotate(45deg);
+    cursor: pointer;
+}
+#close1{
+    position: absolute;
+    top: 0;
+    right: 10px;
+    font-size: 35px;
+    transform: rotate(45deg);
+    cursor: pointer;
+}
+#close2{
+    position: absolute;
+    top: 0;
+    right: 10px;
+    font-size: 35px;
+    transform: rotate(45deg);
+    cursor: pointer;
+}
+#close3{
+    position: absolute;
+    top: 0;
+    right: 10px;
+    font-size: 35px;
+    transform: rotate(45deg);
+    cursor: pointer;
+}
+#tr1{
+     border-radius: 20px;
+     background-color: red;
+     color: white;
+     font-size: 18px;
+}
+#tr1:hover{
+    cursor: pointer;
+    color: blue;
+    background-color: white;
+}
+#submit{
+    border-radius: 20px;
+    background-color: red;
+    color: white;
+    font-size: 18px;
+}
+#submit:hover{
+    cursor: pointer;
+    color: blue;
+    background-color: white;
+}
+#pr1{
+    border-radius: 20px;
+    background-color: red;
+    color: white;
+    font-size: 18px;
+}
+#pr1:hover{
+    cursor: pointer;
+    color: blue;
+    background-color: white;
+}

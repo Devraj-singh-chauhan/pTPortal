@@ -1,0 +1,11 @@
+body{
+    background-image:url(Images/pie.jpg);
+    background-size:cover;
+    background-attachment:fixed;
+    font-family: Verdana,sans-serif;
+    justify-content: center;
+    align-items: center;
+    margin-left: 50px;
+    text-shadow: 1px 1px 2px black;
+}
+

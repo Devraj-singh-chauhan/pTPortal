@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parent Portal</title>
+    <link rel="stylesheet" href="css/style3.css">
+    {{!-- <style media="screen">
+
+    </style> --}}
+</head>
+<body>
+  <p><h2>pTPortal</h2></p>
+  <hr>
+    <div>
+       <h1>
+
+       <div style="float : left; color: #ff0000;">Welcome {{childinfo.name}}'s parent!</div>
+
+<br>
+<br>
+<div>
+<p> <h4><u>Student's Profiles</u></h4> </p>
+<p style=" font-size : 20px; "> Student's Name: {{childinfo.name}}</p>
+  <p style=" font-size : 20px;">Student's Reg No. : {{childinfo.reg_no}}</p>
+  <br>
+</div>
+
+</h1>
+
+        <!--showing homework -->
+  <p style="font-size : 30px;"><b><u>Show Homework</u></b></p>
+    <a href="/get_homework">Show</a>
+    <div>
+        {{#each hw_details}}
+        <div>homework: {{ this.homework}}</div>
+        <div>date: {{this.date}}</div>
+        {{/each}}
+    </div>
+
+    </div>
+</body>
+</html>
