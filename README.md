@@ -9,7 +9,7 @@ This is a web based project based on webD with a theme of life in a pandemic for
 https://www.youtube.com/watch?v=bQHD8Zl07Oc
 
 ## Presentation Link
-
+https://drive.google.com/drive/folders/1xsX5ZjTy5Jb1KDPKEqyhNTQHMvdDUXG1
 
 ## Technology Stack
 1. HTML
